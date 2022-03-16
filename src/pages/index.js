@@ -50,7 +50,7 @@ class IndexPage extends Component {
           <StaticImage src="../images/nav.jpg" alt="navigation" />
         </div>
         <div className="hero">
-          <video poster="" width="100%" height="100%" playsinline autoPlay autoplay muted loop>
+          <video width="100%" height="100%" playsInline autoPlay muted loop>
             <source src={videoHero} type="video/mp4" />
           </video>
         </div>
@@ -77,7 +77,7 @@ class IndexPage extends Component {
         </div>
         <div className="durability">
           <div className="durability-vid">
-            <video poster="" width="100%" height="100%" playsinline autoPlay autoplay muted loop>
+            <video width="100%" height="100%" playsInline autoPlay muted loop>
               <source src={videoDurability} type="video/mp4" />
             </video>
           </div>
@@ -122,7 +122,7 @@ class IndexPage extends Component {
               <p>All Fracture prints are produced in Alachua, Florida with and arrive ready for you to display.</p>
             </div>
             <div className="manufactured-vid">
-              <video poster="" width="100%" height="100%" playsinline autoPlay autoplay muted loop>
+              <video width="100%" height="100%" playsInline autoPlay muted loop>
                 <source src={videoProduction} type="video/mp4" />
               </video>
             </div>
@@ -158,7 +158,7 @@ class IndexPage extends Component {
         </div>
         <div className="spin">
           <div className="inner-container">
-            <video poster="" width="100%" height="100%" playsinline autoPlay autoplay muted loop>
+            <video width="100%" height="100%" playsInline autoPlay muted loop>
               <source src={videoSpin} type="video/mp4" />
             </video>
           </div>
