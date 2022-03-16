@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import "./index.scss"
 
-import videoHero from '../video/hero-compress.mp4'
+import videoHero from '../video/hero-compression-strong.mp4'
 import videoDurability from '../video/durability-compress.mp4'
 import videoProduction from '../video/production-compress.mp4'
 import videoSpin from '../video/spin-compress.mp4'
