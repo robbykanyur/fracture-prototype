@@ -121,7 +121,7 @@ class IndexPage extends Component {
             </div>
             <div className="manufactured-content">
               <h2>Manufactured and assembled in the USA.</h2>
-              <p>All Fracture prints are produced in Alachua, Florida with and arrive ready for you to display.</p>
+              <p>All Fracture prints are produced in Alachua, Florida with and arrive ready for you to display. We even include a screw in the box!</p>
             </div>
             <div className="manufactured-vid">
               <video width="100%" height="100%" playsInline autoPlay muted loop>
