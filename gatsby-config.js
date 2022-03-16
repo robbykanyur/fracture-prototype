@@ -1,7 +1,15 @@
 module.exports = {
   siteMetadata: {
       title: ``,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.fractureme.com`
   },
-  plugins: ["gatsby-plugin-sass"]
+  plugins: [
+    "gatsby-plugin-sass",
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/icon.png'
+      },
+    },
+  ],
 };

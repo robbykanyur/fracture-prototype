@@ -1,0 +1,244 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+$midnight: #132147;
+$midnight-40: #A1A6B5;
+$midnight-60: #717A91;
+$cobalt: #135BFF;
+$cobalt-20: #D0DEFF;
+$cobalt-40: #A1BDFF;
+$cotton: #FDFCFC;
+$paper: #F8F5F4;
+$parchment: #EEEAE7;
+$pink: #E715DE;
+$amber: #C5471F;
+$cobalt-hover: #3a76ff;
+
+$akwe-regular: 'AkwePro-Regular';
+$akwe-demi: 'AkwePro-DemiBold';
+$akwe-bold: 'AkwePro-Bold';
+$fuse: 'FuseV2Display-Black';
+
+@mixin heading {
+	font-family: $fuse;
+	font-weight: 400;
+}
+
+@mixin heading-00 {
+	@include heading;
+	font-size: 40px;
+	line-height: 48px;
+}
+
+@mixin heading-01 {
+	@include heading;
+	font-size: 32px;
+	line-height: 36px;
+}
+
+@mixin heading-02 {
+	@include heading;
+	font-size: 28px;
+	line-height: 32px;
+}
+
+@mixin heading-03 {
+	@include heading;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+@mixin price {
+	font-size: 24px;
+	line-height: 24px;
+}
+
+@mixin price-demi {
+	@include price;
+	font-family: $akwe-demi;
+}
+
+@mixin price-regular {
+	@include price;
+	font-family: $akwe-regular;
+}
+
+@mixin paragraph {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+@mixin paragraph-regular {
+	@include paragraph;
+	font-family: $akwe-regular;
+}
+
+@mixin paragraph-demi {
+	@include paragraph;
+	font-family: $akwe-demi;
+}
+
+@mixin paragraph-bold {
+	@include paragraph;
+	font-family: $akwe-bold;
+}
+
+@mixin medium {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+@mixin medium-regular {
+	@include medium;
+	font-family: $akwe-regular;
+}
+
+@mixin medium-demi {
+	@include medium;
+	font-family: $akwe-demi;
+}
+
+@mixin medium-bold {
+	@include medium;
+	font-family: $akwe-bold;
+}
+
+@mixin small {
+	font-size: 12px;
+	line-height: 12px;
+}
+
+@mixin small-bold {
+	@include small;
+	font-family: $akwe-bold;
+}
+
+@mixin small-demi {
+	@include small;
+	font-family: $akwe-demi;
+}
+
+@mixin small-regular {
+	@include small;
+	font-family: $akwe-regular;
+}
+
+@mixin caption {
+	font-size: 13px;
+	line-height: 13px;
+	text-transform: uppercase;
+}
+
+@mixin caption-regular {
+	@include caption;
+	font-family: $akwe-regular;
+}
+
+@mixin caption-bold {
+	@include caption;
+	font-family: $akwe-bold;
+}
+
+@mixin caption-demi {
+	@include caption;
+	font-family: $akwe-demi;
+}
+
+@mixin hyperlink {
+	color: $cobalt;
+}
+
+@mixin hyperlink-regular {
+	@include hyperlink;
+	text-decoration: underline;
+}
+
+@mixin hyperlink-plain {
+	@include hyperlink;
+	text-decoration: none;
+}
+
+@mixin wrapper-tablet {
+	width: 85%;
+}
+
+@mixin wrapper-mobile {
+	width: 100%;
+	padding: 0 1.5rem;
+}
+
+@font-face {
+	font-family: 'FuseV2Display-Black';
+	src: url('../fonts/FuseV2Display-Black.woff2') format('woff2'), url('/static/FuseV2Display-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'AkwePro-Regular';
+	src: url('../fonts/AkwePro-Regular.woff2') format('woff2'), url('/static/AkwePro-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'AkwePro-DemiBold';
+	src: url('../fonts/AkwePro-DemiBold.woff2') format('woff2'), url('/static/AkwePro-DemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'AkwePro-Bold';
+	src: url('../fonts/AkwePro-Bold.woff2') format('woff2'), url('/static/AkwePro-Bold.woff') format('woff');
+}
+
+body {
+    background: $cotton;
+    color: $midnight;
+    font-family: $akwe-regular;
+	font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $fuse;
+}
+
+a {
+	@include hyperlink-regular;
+}
