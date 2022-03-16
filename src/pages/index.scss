@@ -167,12 +167,20 @@ img {
 	}
 	.testimonial-item {
 		margin-bottom: 2.5rem;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 }
 
 .spin {
-	width: 250px;
-	margin: 0 auto 2.5rem;
+	background: #ffffff;
+	.inner-container {
+		width: 250px;
+		margin: 0 auto;
+	}
+	margin: 0 auto;
+	padding: 2.5rem 0;
 }
 
 .cta {
