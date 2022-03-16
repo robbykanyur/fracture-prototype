@@ -9,6 +9,8 @@ import videoDurability from '../video/durability-compress.mp4'
 import videoProduction from '../video/production-compress.mp4'
 import videoSpin from '../video/spin-compress.mp4'
 
+import heroPoster from '../images/hero-poster.jpg'
+
 class IndexPage extends Component {
   constructor() {
     super()
@@ -49,8 +51,8 @@ class IndexPage extends Component {
         <div className="nav">
           <StaticImage src="../images/nav.jpg" alt="navigation" />
         </div>
-        <div className="hero">
-          <video width="100%" height="100%" playsInline autoPlay muted loop>
+        <div className="hero" style={{backgroundImage: `url(${heroPoster})`}}>
+          <video width="100%" poster={heroPoster} playsInline autoPlay muted loop>
             <source src={videoHero} type="video/mp4" />
           </video>
         </div>
