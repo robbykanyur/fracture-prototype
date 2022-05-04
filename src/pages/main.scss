@@ -276,3 +276,20 @@ a.btn-secondary-white {
 		background-color: rgba(255,255,255,0.2);
 	}
 }
+
+* {
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background: $cotton;
+	font-size: 16px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+img {
+	max-width: 100%;
+}
